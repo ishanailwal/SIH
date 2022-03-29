@@ -1,0 +1,88 @@
+/* @import "compass/css3"; */
+/* @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700); */
+/* @import "compass/reset"; */
+* {
+  box-sizing: border-box;
+}
+/* body {
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2%;
+} */
+.wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #dadada;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+/* ul li {
+  line-height: 2;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  clear: both;
+}
+ul li:before {
+  content: "\2023";
+  padding: 0 1em 0 0;
+} */
+.bar {
+  background: #146EBE;
+  width: 0;
+  margin: 0.25em 0;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background 0.2s;
+  -webkit-transform: translate3d(0, 0, 0);
+  clear: both;
+  margin-bottom: 2%;
+}
+.bar:nth-of-type(2n) {
+  background: #8fbbe2;
+}
+.bar .label {
+  font-size: 0.75em;
+  padding: 1em;
+  background: #3d3d3d;
+  width: 8em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.bar .label.light {
+  background: #575757;
+}
+.count {
+  position: absolute;
+  right: 0.25em;
+  top: 0.75em;
+  padding: 0.15em;
+  font-size: 0.75em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.holder .hoverable1{
+    visibility:hidden;
+   
+}
+.holder:hover .hoverable1{
+    visibility:visible;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin-left:2%;
+}
